@@ -87,9 +87,8 @@ resource "aws_instance" "dasa-server" {
 
  provisioner "file" {
 
-  source   = "index.html"
-
-  destination = "/var/www/html/index.html"
+    source   = "../target/japp1.war"
+    destination = "/var/lib/tomcat9/webapps/ROOT.war"
 
  }
 
