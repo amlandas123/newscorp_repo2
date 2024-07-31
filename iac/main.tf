@@ -99,7 +99,7 @@ resource "aws_instance" "dasa-server" {
 
   private_key = "${file(local_file.tf-key.filename)}"
 
-   host = "${aws_instance.web-server.public_ip}"
+   host = "${aws_instance.dasa-server.public_ip}"
 
  }
 
