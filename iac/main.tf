@@ -87,7 +87,7 @@ resource "aws_instance" "dasa-server" {
 
  provisioner "file" {
 
-    source   = "../target/japp1.war"
+    source   = "../target/jsap-nts16.war"
     destination = "/var/lib/tomcat9/webapps/ROOT.war"
 
  }
